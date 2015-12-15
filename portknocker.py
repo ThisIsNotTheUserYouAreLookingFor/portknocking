@@ -87,4 +87,4 @@ print "START sniffing"
 filter_rule = "tcp and not src host " + serverip + " and net "+address_space
 print filter_rule
 
-sniff(filter=filter_rule, store=0, iface="wlan0", prn=check_knock)
+sniff(filter=filter_rule, store=0, iface="eth0", prn=check_knock)
